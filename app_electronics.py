@@ -17,7 +17,7 @@ names = {
     "item_controller": "DualSense Controller"
 }
 
-# قراءة البيانات من المسار الصحيح
+# المسار الصحيح لقراءة البيانات من مجلد data
 df = pd.read_csv('data/sample_electronics.inter', sep='\t')
 st.success(f"✅ تم تحميل {len(df)} تفاعل من منتجات إلكترونيات")
 
