@@ -27,6 +27,6 @@ with st.sidebar:
     user_id = st.selectbox("اختر مستخدم", users)
     if st.button("🎯 احصل على توصيات"):
         st.subheader(f"📽️ توصيات للمستخدم {user_id}")
-        for i, item_id in enumerate(user_items.get(user_id, [])[:5]):
+        for i, item_id in enumerate(user_items.get(user_id, [])[:10]):
             name = names.get(str(item_id), f"منتج {item_id}")
             st.write(f"{i+1}. {name}")
